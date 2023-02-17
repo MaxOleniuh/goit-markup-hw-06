@@ -554,7 +554,7 @@ a {
   cursor: pointer;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-  transition-property: var(--body-background);
+  transition-property: background-color;
 }
 .order-btn:is(:hover, :focus) {
   background: var(--pressed-state);
@@ -724,7 +724,8 @@ a {
   width: 8px;
   height: 8px;
   fill: var(--dark-theme);
-  transition-property: fill;
+  transition-property: fill, var(--transition-timing-function),
+    var(--transition-duration);
 }
 .modal-form {
   display: flex;
